@@ -14,7 +14,7 @@ public class Main {
     List<LocalDateTime> times=new ArrayList<>();
     times.add(time);
     times.add(lastTime);
-    time.plusMinutes(15);
+    time=time.plusMinutes(15);
     times.add(time);
     System.out.println(times);
     }
