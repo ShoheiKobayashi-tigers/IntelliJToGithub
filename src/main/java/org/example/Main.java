@@ -33,6 +33,8 @@ public class Main {
     List<Object> student4 = List.of(4, "小林", "○", "○", "○", "×", "○", "×", "○", "○", "○", "○");
     List<Object> student5 = List.of(5, "田中", "○", "×", "×", "×", "○", "○", "○", "○", "×", "○");
     List<Object> student6 = List.of(6, "大森", "×", "○", "○", "○", "○", "×", "○", "×", "○", "○");
+    studentData.put(times.get(0), (String) student1.get(3));
+    System.out.println(studentData);
   }
 
 
