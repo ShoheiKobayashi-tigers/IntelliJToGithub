@@ -11,11 +11,13 @@ public class Main {
 
     LocalDateTime time=LocalDateTime.of(2025,7,25,13,0);
     LocalDateTime lastTime=LocalDateTime.of(2025,7,25,15,0);
+    int neededTime=15;
     List<LocalDateTime> times=new ArrayList<>();
-    times.add(time);
-    times.add(lastTime);
-    time=time.plusMinutes(15);
-    times.add(time);
+    for(;!time.isAfter(lastTime);time=time.plusMinutes(neededTime)){
+      times.add(time);
+    }
     System.out.println(times);
+
+
     }
 }
